@@ -1,0 +1,11 @@
+@EndUserText.label: 'Access Control at Consumption Level'
+@MappingRole: true
+define role ZC_AJ_RAP_TRAVEL_ACCESS {
+    grant
+        select
+            on
+                ZC_AJ_RAP_TRAVEL
+                    where
+                        inheriting conditions from entity ZI_AJ_RAP_TRAVEL;
+                        
+}
